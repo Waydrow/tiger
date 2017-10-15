@@ -24,9 +24,6 @@ public class Main {
     HashSet<String> ids;
     StringBuffer buf;
 
-    // ////////////////////////////////////////
-    // interpreter
-
     // deal with Exp
     private int maxArgsExp(Exp.T exp) {
         //new Todo();
@@ -79,9 +76,27 @@ public class Main {
     }
 
 
+    // ////////////////////////////////////////
+    // interpreter
 
     private void interpStm(Stm.T prog) {
         interpStm(prog, null);
+    }
+
+    private Slp.Table interpStm(Stm.T prog, Slp.Table t) {
+        if (prog instanceof Stm.Compound) {
+            //new Todo();
+            Slp.Table t1 = interpStm(((Stm.Compound) prog).s1, t);
+            return interpStm(((Stm.Compound) prog).s2, t1);
+        } else if (prog instanceof Stm.Assign) {
+            //new Todo();
+            Slp.IntAndTable s1 = interpExp(((Stm.Assign) prog).exp, t);
+            return new Slp.Table(((Stm.Assign) prog).id, s1.i, s1.t);
+        } else if (prog instanceof Stm.Print) {
+            return print(((Stm.Print) prog).explist, t);
+        } else {
+            return null;
+        }
     }
 
     private Slp.IntAndTable interpExp(Exp.T exp, Slp.Table t) {
@@ -112,7 +127,7 @@ public class Main {
     private Slp.Table print(ExpList.T expList, Slp.Table t) {
         if (expList instanceof ExpList.Pair) {
             Slp.IntAndTable s1 = interpExp(((ExpList.Pair) expList).exp, t);
-            System.out.println(s1.i + " ");
+            System.out.print(s1.i + " ");
             return print(((ExpList.Pair) expList).list, s1.t);
         } else if (expList instanceof ExpList.Last) {
             Slp.IntAndTable s2 = interpExp(((ExpList.Last) expList).exp, t);
@@ -123,21 +138,8 @@ public class Main {
         }
     }
 
-    private Slp.Table interpStm(Stm.T prog, Slp.Table t) {
-        if (prog instanceof Stm.Compound) {
-            //new Todo();
-            Slp.Table t1 = interpStm(((Stm.Compound) prog).s1, t);
-            return interpStm(((Stm.Compound) prog).s2, t1);
-        } else if (prog instanceof Stm.Assign) {
-            //new Todo();
-            Slp.IntAndTable s1 = interpExp(((Stm.Assign) prog).exp, t);
-            return new Slp.Table(((Stm.Assign) prog).id, s1.i, s1.t);
-        } else if (prog instanceof Stm.Print) {
-            return print(((Stm.Print) prog).explist, t);
-        } else {
-            return null;
-        }
-    }
+    // interpreter end
+    // ////////////////////////////////////////
 
     private void emit(String s) {
         buf.append(s);
