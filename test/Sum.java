@@ -9,7 +9,7 @@ class Sum {
 
 class Doit { // xx
     public int doit(int n) {
-        int /**ff*/ sum; /*  h */
+        int sum;
         int i;
         
         i = 0;
