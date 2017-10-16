@@ -7,10 +7,14 @@ import lexer.Token.Kind;
 public class Parser {
     Lexer lexer;
     Token current;
+    boolean rollback;
 
     public Parser(String fname, java.io.InputStream fstream) {
         lexer = new Lexer(fname, fstream);
+//        fstream.mark(1);
+        //System.out.println(fstream.markSupported() ? "TTTT" : "FFFF");
         current = lexer.nextToken();
+        rollback = false;
     }
 
     // /////////////////////////////////////////////
@@ -253,6 +257,7 @@ public class Parser {
     // Statements -> Statement Statements
     // ->
     private void parseStatements() {
+        //System.out.println("current kind: " + current.kind.toString());
         while (current.kind == Kind.TOKEN_LBRACE || current.kind == Kind.TOKEN_IF
                 || current.kind == Kind.TOKEN_WHILE
                 || current.kind == Kind.TOKEN_SYSTEM || current.kind == Kind.TOKEN_ID) {
@@ -294,8 +299,15 @@ public class Parser {
         // to parse the "Type" nonterminal in this method, instead of writing
         // a fresh one.
         parseType();
-        eatToken(Kind.TOKEN_ID);
-        eatToken(Kind.TOKEN_SEMI);
+        if (current.kind == Kind.TOKEN_ID) {
+            eatToken(Kind.TOKEN_ID);
+            eatToken(Kind.TOKEN_SEMI);
+        } else {
+            //System.out.println("Reset!!");
+            rollback = true;
+            lexer.reset();
+            current.kind = Kind.TOKEN_ID;
+        }
         return;
     }
 
@@ -304,7 +316,18 @@ public class Parser {
     private void parseVarDecls() {
         while (current.kind == Kind.TOKEN_INT || current.kind == Kind.TOKEN_BOOLEAN
                 || current.kind == Kind.TOKEN_ID) {
+            if (rollback) {
+                //System.out.println("Rollback!!");
+                rollback = false;
+                return;
+            }
+            if (current.kind == Kind.TOKEN_ID) {
+                //System.out.println("Mark!!");
+                //System.out.println("current kind: " + current.kind.toString());
+                lexer.mark(1);
+            }
             parseVarDecl();
+            //System.out.println("bbbcurrent kind: " + current.kind.toString());
         }
         return;
     }
@@ -342,6 +365,7 @@ public class Parser {
 //        System.out.println("hhhh");
         parseVarDecls();
         parseStatements();
+        //System.out.println("aaa");
         eatToken(Kind.TOKEN_RETURN);
         parseExp();
         eatToken(Kind.TOKEN_SEMI);

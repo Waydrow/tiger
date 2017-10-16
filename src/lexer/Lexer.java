@@ -2,6 +2,7 @@ package lexer;
 
 import static control.Control.ConLexer.dump;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -187,6 +188,19 @@ public class Lexer {
         if (dump)
             System.out.println(t.toString());
         return t;
+    }
+
+    public void mark(int n) {
+        this.fstream.mark(n);
+    }
+
+    public void reset() {
+        try {
+            this.fstream.reset();
+        } catch (IOException e) {
+            System.out.println("ERROR: Cannot reset inputStream to mark position");
+            e.printStackTrace();
+        }
     }
 
     private void test(int c) {
