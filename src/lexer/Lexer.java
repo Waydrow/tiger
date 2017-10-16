@@ -64,24 +64,41 @@ public class Lexer {
             //lookahead = this.fstream.read();
         }
 
-//        c = this.fstream.read();
         if (-1 == c)
             // The value for "lineNum" is now "null",
             // you should modify this to an appropriate
             // line number for the "EOF" token.
             return new Token(Kind.TOKEN_EOF, this.lineNum);
 
-        // skip all kinds of "blanks"
-        while (' ' == c || '\t' == c || '\r' == c || c == '\n') {
+        // skip all kinds of "blanks" and comments
+        // comments: // or /* */
+        while (' ' == c || '\t' == c || '\r' == c || c == '\n' || c == '/') {
             if (c == '\n') {
                 this.lineNum += 1;
             }
+            int tmp = c;
             c = this.fstream.read();
+            // deal with comment //
+            if (tmp == '/' && c == '/') {
+                while(c != '\n') {
+                    c = this.fstream.read();
+                }
+            }
+            // deal with comment /* */
+            if (tmp == '/' && c == '*') {
+                c = this.fstream.read();
+                while(true) {
+                    tmp = c;
+                    c = this.fstream.read();
+                    if (tmp == '*' && c == '/') {
+                        c = this.fstream.read();
+                        break;
+                    }
+                }
+            }
         }
 
         lookahead = this.fstream.read();
-
-        //test(c);
 
         if (-1 == c)
             return new Token(Kind.TOKEN_EOF, this.lineNum);

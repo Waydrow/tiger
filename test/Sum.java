@@ -4,9 +4,12 @@ class Sum {
     }
 }
 
-class Doit {
+// hello
+/* hello//* */
+
+class Doit { // xx
     public int doit(int n) {
-        int sum;
+        int /**ff*/ sum; /*  h */
         int i;
         
         i = 0;
