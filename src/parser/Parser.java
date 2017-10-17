@@ -449,9 +449,11 @@ public class Parser {
         eatToken(Kind.TOKEN_EOF);
         return;
     }
-
-    public void parse() {
-        parseProgram();
-        return;
-    }
+	
+	
+  public ast.Ast.Program.T parse()
+  {
+    parseProgram();
+    return null;
+  }
 }
