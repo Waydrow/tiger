@@ -8,6 +8,7 @@ public class Parser {
     Lexer lexer;
     Token current;
     boolean rollback;
+    Kind rollbackKind;
 
     public Parser(String fname, java.io.InputStream fstream) {
         lexer = new Lexer(fname, fstream);
@@ -238,7 +239,13 @@ public class Parser {
                 eatToken(Kind.TOKEN_SEMI);
                 return;
             case TOKEN_ID:
-                advance();
+                if (rollback) {
+                    // deal with backtracking
+                    rollback = false;
+                    current.kind = rollbackKind;
+                } else {
+                    advance();
+                }
                 if (current.kind == Kind.TOKEN_LBRACK) {
                     eatToken(Kind.TOKEN_LBRACK);
                     parseExp();
@@ -303,9 +310,12 @@ public class Parser {
             eatToken(Kind.TOKEN_ID);
             eatToken(Kind.TOKEN_SEMI);
         } else {
-            //System.out.println("Reset!!");
+            // deal with the following situation
+            // int i;
+            // i = 0;
+            // prevent backtracking
             rollback = true;
-            lexer.reset();
+            rollbackKind = current.kind;
             current.kind = Kind.TOKEN_ID;
         }
         return;
@@ -317,17 +327,9 @@ public class Parser {
         while (current.kind == Kind.TOKEN_INT || current.kind == Kind.TOKEN_BOOLEAN
                 || current.kind == Kind.TOKEN_ID) {
             if (rollback) {
-                //System.out.println("Rollback!!");
-                rollback = false;
                 return;
             }
-            if (current.kind == Kind.TOKEN_ID) {
-                //System.out.println("Mark!!");
-                //System.out.println("current kind: " + current.kind.toString());
-                lexer.mark(1);
-            }
             parseVarDecl();
-            //System.out.println("bbbcurrent kind: " + current.kind.toString());
         }
         return;
     }

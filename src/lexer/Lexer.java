@@ -202,9 +202,4 @@ public class Lexer {
             e.printStackTrace();
         }
     }
-
-    private void test(int c) {
-        System.out.print("c: " + (char) c);
-        System.out.println("   lookahead: " + (char) lookahead + "   lineNum: " + this.lineNum);
-    }
 }
