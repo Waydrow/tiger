@@ -4,10 +4,7 @@ class Sum {
     }
 }
 
-// hello
-/* hello//* */
-
-class Doit { // xx
+class Doit {
     public int doit(int n) {
         int sum;
         int i;
