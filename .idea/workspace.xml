@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="745ad9b3-3f55-4fd9-91ee-67b5e90f1d1c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/lexer/Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Parser.java" afterPath="$PROJECT_DIR$/src/parser/Parser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +35,8 @@
           <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="247" column="17" lean-forward="true" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+                <state relative-caret-position="449">
+                  <caret line="261" column="5" lean-forward="true" selection-start-line="261" selection-start-column="5" selection-end-line="261" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -159,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -658,12 +656,12 @@
       <workItem from="1507859036479" duration="9378000" />
       <workItem from="1508048310457" duration="10582000" />
       <workItem from="1508115074594" duration="23273000" />
-      <workItem from="1508201195133" duration="2277000" />
+      <workItem from="1508201195133" duration="2999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64005000" />
+    <option name="totallyTimeSpent" value="64727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,7 +673,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1143,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="247" column="17" lean-forward="true" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+        <state relative-caret-position="449">
+          <caret line="261" column="5" lean-forward="true" selection-start-line="261" selection-start-column="5" selection-end-line="261" selection-end-column="5" />
           <folding />
         </state>
       </provider>
