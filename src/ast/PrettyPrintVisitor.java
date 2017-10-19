@@ -71,23 +71,38 @@ public class PrettyPrintVisitor implements Visitor {
         // Lab2, exercise4: filling in missing code.
         // Similar for other methods with empty bodies.
         // Your code here:
+        e.left.accept(this);
+        this.say(" + ");
+        e.right.accept(this);
+        return;
     }
 
     @Override
     public void visit(And e) {
+        e.left.accept(this);
+        this.say(" && ");
+        e.right.accept(this);
+        return;
     }
 
     @Override
     public void visit(ArraySelect e) {
+        e.array.accept(this);
+        this.say("[");
+        e.index.accept(this);
+        this.say("]");
+        return;
     }
 
     @Override
     public void visit(Call e) {
         e.exp.accept(this);
         this.say("." + e.id + "(");
-        for (Exp.T x : e.args) {
-            x.accept(this);
-            this.say(", ");
+        for (int i = 0; i < e.args.size(); i++) {
+            e.args.get(i).accept(this);
+            if (i != e.args.size() - 1) {
+                this.say(",");
+            }
         }
         this.say(")");
         return;
@@ -95,6 +110,7 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(False e) {
+        this.say("false");
     }
 
     @Override
@@ -104,6 +120,9 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(Length e) {
+        e.array.accept(this);
+        this.say(".length");
+        return;
     }
 
     @Override
@@ -116,6 +135,10 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(NewIntArray e) {
+        this.say("new int [");
+        e.exp.accept(this);
+        this.say("]");
+        return;
     }
 
     @Override
@@ -126,6 +149,9 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(Not e) {
+        this.say("!");
+        e.exp.accept(this);
+        return;
     }
 
     @Override
@@ -157,6 +183,7 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(True e) {
+        this.say("true");
     }
 
     // statements
@@ -165,16 +192,29 @@ public class PrettyPrintVisitor implements Visitor {
         this.printSpaces();
         this.say(s.id + " = ");
         s.exp.accept(this);
-        this.say(";");
+        this.sayln(";");
         return;
     }
 
     @Override
     public void visit(AssignArray s) {
+        this.printSpaces();
+        this.say(s.id + "[");
+        s.index.accept(this);
+        this.say("] = ");
+        s.exp.accept(this);
+        this.sayln(";");
+        return;
     }
 
     @Override
     public void visit(Block s) {
+        for(Stm.T stm : s.stms) {
+//            this.printSpaces();
+            stm.accept(this);
+            //this.sayln("");
+        }
+        return;
     }
 
     @Override
@@ -207,15 +247,28 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(While s) {
+        this.printSpaces();
+        this.say("while (");
+        s.condition.accept(this);
+        this.sayln(") {");
+        this.indent();
+        s.body.accept(this);
+        this.unIndent();
+        //this.sayln("");
+        this.printSpaces();
+        this.sayln("}");
+        return;
     }
 
     // type
     @Override
     public void visit(Boolean t) {
+        this.say("boolean");
     }
 
     @Override
     public void visit(ClassType t) {
+        this.say(t.id);
     }
 
     @Override
@@ -225,11 +278,15 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(IntArray t) {
+        this.say("int[]");
     }
 
     // dec
     @Override
     public void visit(Dec.DecSingle d) {
+        this.printSpaces();
+        d.type.accept(this);
+        this.sayln(" " + d.id + ";");
     }
 
     // method
@@ -238,19 +295,24 @@ public class PrettyPrintVisitor implements Visitor {
         this.say("  public ");
         m.retType.accept(this);
         this.say(" " + m.id + "(");
-        for (Dec.T d : m.formals) {
-            Dec.DecSingle dec = (Dec.DecSingle) d;
+        int len = m.formals.size();
+        for (int i = 0; i < len; i++) {
+            Dec.DecSingle dec = (Dec.DecSingle) m.formals.get(i);
             dec.type.accept(this);
-            this.say(" " + dec.id + ", ");
+            this.say(" " + dec.id);
+            if (i != len - 1) {
+                this.say(",");
+            }
         }
         this.sayln(")");
         this.sayln("  {");
 
         for (Dec.T d : m.locals) {
             Dec.DecSingle dec = (Dec.DecSingle) d;
-            this.say("    ");
+            dec.accept(this);
+            /*this.say("    ");
             dec.type.accept(this);
-            this.say(" " + dec.id + ";\n");
+            this.say(" " + dec.id + ";\n");*/
         }
         this.sayln("");
         for (Stm.T s : m.stms)
@@ -280,8 +342,10 @@ public class PrettyPrintVisitor implements Visitor {
             this.say(" ");
             this.sayln(dec.id + ";");
         }
-        for (Method.T mthd : c.methods)
+        for (Method.T mthd : c.methods) {
             mthd.accept(this);
+            this.sayln("");
+        }
         this.sayln("}");
         return;
     }
@@ -306,7 +370,7 @@ public class PrettyPrintVisitor implements Visitor {
         this.sayln("");
         for (ast.Ast.Class.T classs : p.classes) {
             classs.accept(this);
+            this.sayln("");
         }
-        System.out.println("\n\n");
     }
 }

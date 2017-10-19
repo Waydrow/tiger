@@ -108,7 +108,7 @@ public class Lexer {
             case '+':
                 return new Token(Kind.TOKEN_ADD, this.lineNum);
             case '&':
-                c = this.fstream.read();
+                lookahead = this.fstream.read();
                 return new Token(Kind.TOKEN_AND, this.lineNum);
             case '=':
                 return new Token(Kind.TOKEN_ASSIGN, this.lineNum);
