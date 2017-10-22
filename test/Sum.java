@@ -9,7 +9,7 @@ class Sum {
 
 class Doit { // xx
 
-    int aa;
+    int ii;
     Doit bb;
 
     public int doit(int n) {
@@ -25,6 +25,8 @@ class Doit { // xx
         p = true;
         b = new int[2];
         b[1] = 3;
+        i = b[1];
+        sum = b.length;
         if (!a && p) {
             System.out.println(222);
         } else {
@@ -38,15 +40,16 @@ class Doit { // xx
     }
 
     public int test(int bbb) {
+        int rr;
         System.out.println(0);
-        return 2;
+        return 0;
     }
 }
 
-class Test {
+class Test extends Doit {
     int b;
 
-    public int tt(int sf) {
+    public int tt(boolean aa, int uu) {
         System.out.println(333);
         return 0;
     }

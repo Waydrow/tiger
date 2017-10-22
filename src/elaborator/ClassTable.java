@@ -3,6 +3,8 @@ package elaborator;
 import ast.Ast.Type;
 import util.Todo;
 
+import java.util.Map;
+
 public class ClassTable {
     // map each class name (a string), to the class bindings.
     private java.util.Hashtable<String, ClassBinding> table;
@@ -73,7 +75,13 @@ public class ClassTable {
     }
 
     public void dump() {
-        new Todo();
+        //new Todo();
+        System.out.println("ClassTable");
+        for(Map.Entry<String, ClassBinding> entry : this.table.entrySet()) {
+            System.out.println(entry.getKey());
+            entry.getValue().toString();
+            System.out.println("\n");
+        }
     }
 
     @Override

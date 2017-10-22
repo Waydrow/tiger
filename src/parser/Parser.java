@@ -47,7 +47,6 @@ public class Parser {
     private void error() {
         System.out.println("Syntax error: compilation aborting...");
         System.out.println("Current Token: " + current.toString());
-        System.out.println("at line " + current.lineNum);
         System.exit(1);
         return;
     }
