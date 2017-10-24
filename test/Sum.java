@@ -18,7 +18,7 @@ class Doit { // xx
         boolean a;
         boolean p;
         int[] b;
-        
+
         i = 0;
         sum = 0;
         a = false;
@@ -44,12 +44,20 @@ class Doit { // xx
         System.out.println(0);
         return 0;
     }
+
+    public boolean isFalse() {
+        //int rr;
+        //rr[1] = 0;
+        return false;
+    }
 }
 
 class Test extends Doit {
     int b;
-
+    int ii;
     public int tt(boolean aa, int uu) {
+        int qqq;
+        qqq = 2;
         System.out.println(333);
         return 0;
     }

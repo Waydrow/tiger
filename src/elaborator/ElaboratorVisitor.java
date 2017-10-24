@@ -43,6 +43,7 @@ public class ElaboratorVisitor implements ast.Visitor {
     public ClassTable classTable; // symbol table for class
     public MethodTable methodTable; // symbol table for each method
     public String currentClass; // the class name being elaborated
+    public String currentMethod; // the method name being elaborated
     public Type.T type; // type of the expression being elaborated
     private Boolean hasError; // whether or not has error
     private int totalError; // total num of errors
@@ -51,6 +52,7 @@ public class ElaboratorVisitor implements ast.Visitor {
         this.classTable = new ClassTable();
         this.methodTable = new MethodTable();
         this.currentClass = null;
+        this.currentMethod = null;
         this.type = null;
         this.hasError = false;
         this.totalError = 0;
@@ -61,7 +63,8 @@ public class ElaboratorVisitor implements ast.Visitor {
         this.totalError += 1;
         System.out.print("Error: ");
         System.out.println(msg);
-        System.out.println("current class: " + this.currentClass + "\n");
+        System.out.println("current class: " + this.currentClass
+                + "; current method: " + this.currentMethod + "\n");
         //System.exit(1);
     }
 
@@ -126,9 +129,12 @@ public class ElaboratorVisitor implements ast.Visitor {
             a.accept(this);
             argsty.addLast(this.type);
         }
-        if (mty.argsType.size() != argsty.size())
+        int argsTypeSize = mty.argsType.size();
+        int argstySize = argsty.size();
+        if (argsTypeSize != argstySize) {
             error("Call: num of func's parameters is wrong");
-        for (int i = 0; i < argsty.size(); i++) {
+        }
+        for (int i = 0; i < (argsTypeSize <= argstySize ? argsTypeSize : argstySize); i++) {
             Dec.DecSingle dec = (Dec.DecSingle) mty.argsType.get(i);
             if (dec.type.toString().equals(argsty.get(i).toString()))
                 ;
@@ -150,7 +156,7 @@ public class ElaboratorVisitor implements ast.Visitor {
     @Override
     public void visit(Id e) {
         // first look up the id in method table
-        Type.T type = this.methodTable.get(e.id);
+        Type.T type = this.methodTable.get(this.currentMethod, e.id);
         // if search failed, then s.id must be a class field.
         if (type == null) {
             type = this.classTable.get(this.currentClass, e.id);
@@ -263,12 +269,14 @@ public class ElaboratorVisitor implements ast.Visitor {
     @Override
     public void visit(Assign s) {
         // first look up the id in method table
-        Type.T type = this.methodTable.get(s.id);
+        Type.T type = this.methodTable.get(this.currentMethod, s.id);
         // if search failed, then s.id must
         if (type == null)
             type = this.classTable.get(this.currentClass, s.id);
-        if (type == null)
+        if (type == null) {
             error("Assign: cannot found left id");
+            return;
+        }
         s.exp.accept(this);
         s.type = type;
         if(!this.type.toString().equals(type.toString())) {
@@ -279,12 +287,16 @@ public class ElaboratorVisitor implements ast.Visitor {
 
     @Override
     public void visit(AssignArray s) {
-        Type.T type = this.methodTable.get(s.id);
+        Type.T type = this.methodTable.get(this.currentMethod, s.id);
         if (type == null) {
             type = this.classTable.get(this.currentClass, s.id);
         }
         if (type == null) {
             error("AssignArray: left id cannot be found");
+            return;
+        }
+        if (!(type instanceof Type.IntArray)) {
+            error("AssignArray: left id must be int array type");
         }
         s.index.accept(this);
         if (!(this.type instanceof Type.Int)) {
@@ -368,8 +380,10 @@ public class ElaboratorVisitor implements ast.Visitor {
     // method
     @Override
     public void visit(Method.MethodSingle m) {
+
+        this.currentMethod = m.id;
         // construct the method table
-        this.methodTable.put(m.formals, m.locals);
+        this.methodTable.put(m.id, m.formals, m.locals);
 
         m.retType.accept(this);
 
@@ -436,6 +450,7 @@ public class ElaboratorVisitor implements ast.Visitor {
         for (Method.T method : c.methods) {
             MethodSingle m = (MethodSingle) method;
             this.classTable.put(c.id, m.id, new MethodType(m.retType, m.formals));
+            this.methodTable.put(m.id, new MethodBinding());
         }
     }
 
