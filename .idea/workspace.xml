@@ -2,62 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="745ad9b3-3f55-4fd9-91ee-67b5e90f1d1c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class$ClassSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class$ClassSingle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec$DecSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec$DecSingle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Add.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Add.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$And.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$And.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$ArraySelect.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$ArraySelect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Call.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Call.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$False.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$False.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Id.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Length.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Length.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Lt.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Lt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewIntArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewIntArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewObject.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Not.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Not.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Num.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Num.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Sub.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Sub.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$This.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$This.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Times.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Times.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$True.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$True.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass$MainClassSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass$MainClassSingle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method$MethodSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method$MethodSingle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program$ProgramSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program$ProgramSingle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Assign.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Assign.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$AssignArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$AssignArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Block.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$If.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$If.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Print.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Print.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$While.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$While.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$Boolean.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$Boolean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$ClassType.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$ClassType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$Int.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$Int.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$IntArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$IntArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/elaborator/ElaboratorVisitor.class" afterPath="$PROJECT_DIR$/bin/elaborator/ElaboratorVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/elaborator/MethodTable.class" afterPath="$PROJECT_DIR$/bin/elaborator/MethodTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parser/Parser$1.class" afterPath="$PROJECT_DIR$/bin/parser/Parser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parser/Parser.class" afterPath="$PROJECT_DIR$/bin/parser/Parser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Tiger.class" afterPath="$PROJECT_DIR$/bin/Tiger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Fac.class" afterPath="$PROJECT_DIR$/bin/ast/Fac.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/CommandLine$1.class" afterPath="$PROJECT_DIR$/bin/control/CommandLine$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/CommandLine$Arg.class" afterPath="$PROJECT_DIR$/bin/control/CommandLine$Arg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/CommandLine$Kind.class" afterPath="$PROJECT_DIR$/bin/control/CommandLine$Kind.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/CommandLine.class" afterPath="$PROJECT_DIR$/bin/control/CommandLine.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/Control$ConAst.class" afterPath="$PROJECT_DIR$/bin/control/Control$ConAst.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/Control$ConLexer.class" afterPath="$PROJECT_DIR$/bin/control/Control$ConLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/Control$ConSlp$T.class" afterPath="$PROJECT_DIR$/bin/control/Control$ConSlp$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/Control$ConSlp.class" afterPath="$PROJECT_DIR$/bin/control/Control$ConSlp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/control/Control.class" afterPath="$PROJECT_DIR$/bin/control/Control.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/util/Bug.class" afterPath="$PROJECT_DIR$/bin/util/Bug.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/util/Flist.class" afterPath="$PROJECT_DIR$/bin/util/Flist.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/util/Label.class" afterPath="$PROJECT_DIR$/bin/util/Label.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/util/Todo.class" afterPath="$PROJECT_DIR$/bin/util/Todo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ast/Ast.java" afterPath="$PROJECT_DIR$/src/ast/Ast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" afterPath="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elaborator/MethodTable.java" afterPath="$PROJECT_DIR$/src/elaborator/MethodTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Parser.java" afterPath="$PROJECT_DIR$/src/parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Sum.java" afterPath="$PROJECT_DIR$/test/Sum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tiger.java" afterPath="$PROJECT_DIR$/src/Tiger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ast/Fac.java" afterPath="$PROJECT_DIR$/src/ast/Fac.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/CommandLine.java" afterPath="$PROJECT_DIR$/src/control/CommandLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/Control.java" afterPath="$PROJECT_DIR$/src/control/Control.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/Bug.java" afterPath="$PROJECT_DIR$/src/util/Bug.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/Flist.java" afterPath="$PROJECT_DIR$/src/util/Flist.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/Label.java" afterPath="$PROJECT_DIR$/src/util/Label.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/Todo.java" afterPath="$PROJECT_DIR$/src/util/Todo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Factorial.java" afterPath="$PROJECT_DIR$/test/Factorial.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,14 +40,14 @@
     <favorites_list name="tiger" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4922887">
+    <splitter split-orientation="horizontal" split-proportion="0.5497221">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Tiger.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Tiger.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="24" />
+                <state relative-caret-position="209">
+                  <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -86,11 +55,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ElaboratorVisitor.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Fac.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ast/Fac.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="356">
+                  <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ElaboratorVisitor.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+                <state relative-caret-position="511">
+                  <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
                   <folding>
                     <element signature="e#4111#4119#0" expanded="true" />
                     <element signature="e#10889#10890#0" expanded="true" />
@@ -103,9 +82,11 @@
           <file leaf-file-name="ClassTable.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-                  <folding />
+                <state relative-caret-position="304">
+                  <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -181,9 +162,12 @@
           <file leaf-file-name="Factorial.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/Factorial.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-                  <folding />
+                <state relative-caret-position="247">
+                  <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#56#57#0" expanded="true" />
+                    <element signature="e#116#117#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -232,9 +216,6 @@
         <option value="$PROJECT_DIR$/src/ast/Acceptable.java" />
         <option value="$PROJECT_DIR$/src/ast/Visitor.java" />
         <option value="$PROJECT_DIR$/src/elaborator/ClassBinding.java" />
-        <option value="$PROJECT_DIR$/test/Factorial.java" />
-        <option value="$PROJECT_DIR$/src/ast/Fac.java" />
-        <option value="$PROJECT_DIR$/src/Tiger.java" />
         <option value="$PROJECT_DIR$/src/lexer/Lexer.java" />
         <option value="$PROJECT_DIR$/src/ast/PrettyPrintVisitor.java" />
         <option value="$PROJECT_DIR$/src/elaborator/MethodType.java" />
@@ -246,6 +227,9 @@
         <option value="$PROJECT_DIR$/src/ast/Ast.java" />
         <option value="$PROJECT_DIR$/test/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" />
+        <option value="$PROJECT_DIR$/src/Tiger.java" />
+        <option value="$PROJECT_DIR$/test/Factorial.java" />
+        <option value="$PROJECT_DIR$/src/ast/Fac.java" />
       </list>
     </option>
   </component>
@@ -294,6 +278,11 @@
             <path>
               <item name="tiger" type="b2602c69:ProjectViewProjectNode" />
               <item name="tiger" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiger" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,6 +290,12 @@
               <item name="tiger" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codegen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tiger" type="b2602c69:ProjectViewProjectNode" />
@@ -781,7 +776,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143228000" />
+    <option name="totallyTimeSpent" value="144207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -800,22 +795,44 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27223426" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1369936" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1369936" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.50647247" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27548808" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.49573562" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27223426" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1369936" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.50647247" order="6" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -857,60 +874,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/slp/Samples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/slp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Todo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lexer/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lexer/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/slp/Slp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="69" column="3" lean-forward="false" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/slp/Samples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1056,9 +1019,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <marker date="1508209633133" expanded="true" signature="7061:7066" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,14 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Fac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/PrettyPrintVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1126,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,16 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/elaborator/MethodTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1195,14 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="316" column="46" lean-forward="false" selection-start-line="316" selection-start-column="46" selection-end-line="316" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1255,23 +1189,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Factorial.java">
+    <entry file="file://$PROJECT_DIR$/src/codegen/C/Ast.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="76">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codegen/C/ClassTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codegen/C/ClassBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/lib.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/gc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/runtime.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="511">
+          <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
           <folding>
             <element signature="e#4111#4119#0" expanded="true" />
             <element signature="e#10889#10890#0" expanded="true" />
             <element signature="e#10911#10912#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#56#57#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Fac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

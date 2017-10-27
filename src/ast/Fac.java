@@ -60,10 +60,10 @@ public class Fac {
                     new Type.Int(), "ComputeFac", new util.Flist<Dec.T>()
                     .list(new Dec.DecSingle(new Type.Int(), "num")),
                     new util.Flist<Dec.T>().list(new Dec.DecSingle(
-                            new Type.Int(), "num_aux")),
-                    new util.Flist<Stm.T>().list(new If(new Lt(new Id("num"),
+                            new Type.Int(), "num_aux")), new util.Flist<Stm.T>()
+                    .list(new If(new Lt(new Id("num"),
                             new Num(1)), new Assign("num_aux",
-                            new Exp.Add(new Num(1), new Num(2))), new Assign("num_aux",
+                            new Num(1)), new Assign("num_aux",
                             new Times(new Id("num"), new Call(
                                     new This(), "ComputeFac",
                                     new util.Flist<Exp.T>().list(new Sub(
