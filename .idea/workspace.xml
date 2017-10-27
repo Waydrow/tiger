@@ -2,10 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="745ad9b3-3f55-4fd9-91ee-67b5e90f1d1c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class$ClassSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class$ClassSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Class.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Class.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec$DecSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec$DecSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Dec.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Dec.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Add.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Add.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$And.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$And.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$ArraySelect.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$ArraySelect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Call.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Call.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$False.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$False.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Id.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Length.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Length.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Lt.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Lt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewIntArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewIntArray.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewObject.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$NewObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Not.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Not.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Num.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Num.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Sub.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Sub.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$This.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$This.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$Times.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$Times.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp$True.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp$True.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Exp.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Exp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass$MainClassSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass$MainClassSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$MainClass.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$MainClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method$MethodSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method$MethodSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Method.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Method.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program$ProgramSingle.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program$ProgramSingle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Program.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Program.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Assign.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Assign.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$AssignArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$AssignArray.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Block.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Block.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$If.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$If.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$Print.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$Print.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$T.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm$While.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm$While.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Stm.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Stm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$Boolean.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$Boolean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$ClassType.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$ClassType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$Int.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$Int.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$IntArray.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$IntArray.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/ast/Ast$Type$T.class" afterPath="$PROJECT_DIR$/bin/ast/Ast$Type$T.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/elaborator/ElaboratorVisitor.class" afterPath="$PROJECT_DIR$/bin/elaborator/ElaboratorVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/elaborator/MethodTable.class" afterPath="$PROJECT_DIR$/bin/elaborator/MethodTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parser/Parser$1.class" afterPath="$PROJECT_DIR$/bin/parser/Parser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parser/Parser.class" afterPath="$PROJECT_DIR$/bin/parser/Parser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ast/Ast.java" afterPath="$PROJECT_DIR$/src/ast/Ast.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" afterPath="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elaborator/MethodTable.java" afterPath="$PROJECT_DIR$/src/elaborator/MethodTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/Parser.java" afterPath="$PROJECT_DIR$/src/parser/Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Sum.java" afterPath="$PROJECT_DIR$/test/Sum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -20,14 +71,14 @@
     <favorites_list name="tiger" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5891425">
+    <splitter split-orientation="horizontal" split-proportion="0.4922887">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Tiger.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Tiger.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+                  <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -35,13 +86,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ElaboratorVisitor.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ElaboratorVisitor.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1648">
-                  <caret line="259" column="5" lean-forward="true" selection-start-line="259" selection-start-column="5" selection-end-line="259" selection-end-column="5" />
+                <state relative-caret-position="397">
+                  <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
                   <folding>
-                    <element signature="e#3934#3942#0" expanded="true" />
+                    <element signature="e#4111#4119#0" expanded="true" />
+                    <element signature="e#10889#10890#0" expanded="true" />
+                    <element signature="e#10911#10912#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -50,54 +103,9 @@
           <file leaf-file-name="ClassTable.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="603">
-                  <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+                <state relative-caret-position="316">
+                  <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ClassBinding.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/elaborator/ClassBinding.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="470">
-                  <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MethodTable.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/elaborator/MethodTable.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#267#268#0" expanded="true" />
-                    <element signature="e#344#345#0" expanded="true" />
-                    <element signature="e#396#397#0" expanded="true" />
-                    <element signature="e#434#435#0" expanded="true" />
-                    <element signature="e#655#656#0" expanded="true" />
-                    <element signature="e#705#706#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MethodBinding.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/elaborator/MethodBinding.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="76">
-                  <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#251#252#0" expanded="true" />
-                    <element signature="e#298#299#0" expanded="true" />
-                    <element signature="e#1108#1109#0" expanded="true" />
-                    <element signature="e#1150#1151#0" expanded="true" />
-                    <element signature="e#1196#1197#0" expanded="true" />
-                    <element signature="e#1241#1242#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -109,9 +117,30 @@
           <file leaf-file-name="Ast.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ast/Ast.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-                  <folding />
+                <state relative-caret-position="308">
+                  <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#1062#1063#0" expanded="true" />
+                    <element signature="e#1106#1107#0" expanded="true" />
+                    <element signature="e#6104#6105#0" expanded="true" />
+                    <element signature="e#6155#6156#0" expanded="true" />
+                    <element signature="e#7354#7355#0" expanded="true" />
+                    <element signature="e#7404#7405#0" expanded="true" />
+                    <element signature="e#8393#8394#0" expanded="true" />
+                    <element signature="e#8439#8440#0" expanded="true" />
+                    <element signature="e#8867#8868#0" expanded="true" />
+                    <element signature="e#8911#8912#0" expanded="true" />
+                    <element signature="e#9312#9313#0" expanded="true" />
+                    <element signature="e#9358#9359#0" expanded="true" />
+                    <element signature="e#9760#9761#0" expanded="true" />
+                    <element signature="e#9806#9807#0" expanded="true" />
+                    <element signature="e#10789#10790#0" expanded="true" />
+                    <element signature="e#10840#10841#0" expanded="true" />
+                    <element signature="e#11701#11702#0" expanded="true" />
+                    <element signature="e#11752#11753#0" expanded="true" />
+                    <element signature="e#14707#14708#0" expanded="true" />
+                    <element signature="e#14753#14754#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -119,31 +148,21 @@
           <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+                <state relative-caret-position="543">
+                  <caret line="316" column="46" lean-forward="false" selection-start-line="316" selection-start-column="46" selection-end-line="316" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Sum.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Sum.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/Sum.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Factorial.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/Factorial.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+                <state relative-caret-position="57">
+                  <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
                   <folding>
-                    <element signature="e#56#57#0" expanded="true" />
-                    <element signature="e#116#117#0" expanded="true" />
+                    <element signature="e#50#51#0" expanded="true" />
+                    <element signature="e#106#107#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,12 +171,19 @@
           <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/BinaryTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#1714#1715#0" expanded="true" />
-                    <element signature="e#1741#1742#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="285">
+                  <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Factorial.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/Factorial.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="57">
+                  <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -177,6 +203,8 @@
     <findStrings>
       <find>aa</find>
       <find>v_key</find>
+      <find>classtype</find>
+      <find>arrayselect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,17 +235,17 @@
         <option value="$PROJECT_DIR$/test/Factorial.java" />
         <option value="$PROJECT_DIR$/src/ast/Fac.java" />
         <option value="$PROJECT_DIR$/src/Tiger.java" />
-        <option value="$PROJECT_DIR$/test/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/lexer/Lexer.java" />
         <option value="$PROJECT_DIR$/src/ast/PrettyPrintVisitor.java" />
-        <option value="$PROJECT_DIR$/src/elaborator/ClassTable.java" />
         <option value="$PROJECT_DIR$/src/elaborator/MethodType.java" />
-        <option value="$PROJECT_DIR$/src/parser/Parser.java" />
-        <option value="$PROJECT_DIR$/src/ast/Ast.java" />
         <option value="$PROJECT_DIR$/src/elaborator/MethodBinding.java" />
         <option value="$PROJECT_DIR$/src/elaborator/MethodTable.java" />
-        <option value="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" />
+        <option value="$PROJECT_DIR$/src/parser/Parser.java" />
         <option value="$PROJECT_DIR$/test/Sum.java" />
+        <option value="$PROJECT_DIR$/src/elaborator/ClassTable.java" />
+        <option value="$PROJECT_DIR$/src/ast/Ast.java" />
+        <option value="$PROJECT_DIR$/test/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java" />
       </list>
     </option>
   </component>
@@ -254,6 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,8 +348,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -747,12 +775,13 @@
       <workItem from="1508460754688" duration="13035000" />
       <workItem from="1508633288036" duration="11477000" />
       <workItem from="1508718985110" duration="8198000" />
-      <workItem from="1508806884724" duration="2553000" />
+      <workItem from="1508806884724" duration="6805000" />
+      <workItem from="1509068368210" duration="11312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127664000" />
+    <option name="totallyTimeSpent" value="143228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -771,9 +800,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27223426" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359275" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1369936" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14072494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -786,7 +816,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1077,32 +1106,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Factorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding>
-            <element signature="e#56#57#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/PrettyPrintVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="150" column="30" lean-forward="false" selection-start-line="150" selection-start-column="30" selection-end-line="150" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,45 +1141,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/Ast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1280">
           <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1184,59 +1157,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
+    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassBinding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        <state relative-caret-position="470">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Sum.java">
+    <entry file="file://$PROJECT_DIR$/src/Tiger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1648">
-          <caret line="259" column="5" lean-forward="true" selection-start-line="259" selection-start-column="5" selection-end-line="259" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="24" />
           <folding>
-            <element signature="e#3934#3942#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elaborator/MethodTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elaborator/MethodBinding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="608">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="316" column="46" lean-forward="false" selection-start-line="316" selection-start-column="46" selection-end-line="316" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elaborator/ClassTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/Ast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#6104#6105#0" expanded="true" />
+            <element signature="e#6155#6156#0" expanded="true" />
+            <element signature="e#7354#7355#0" expanded="true" />
+            <element signature="e#7404#7405#0" expanded="true" />
+            <element signature="e#8393#8394#0" expanded="true" />
+            <element signature="e#8439#8440#0" expanded="true" />
+            <element signature="e#8867#8868#0" expanded="true" />
+            <element signature="e#8911#8912#0" expanded="true" />
+            <element signature="e#9312#9313#0" expanded="true" />
+            <element signature="e#9358#9359#0" expanded="true" />
+            <element signature="e#9760#9761#0" expanded="true" />
+            <element signature="e#9806#9807#0" expanded="true" />
+            <element signature="e#10789#10790#0" expanded="true" />
+            <element signature="e#10840#10841#0" expanded="true" />
+            <element signature="e#11701#11702#0" expanded="true" />
+            <element signature="e#11752#11753#0" expanded="true" />
+            <element signature="e#14707#14708#0" expanded="true" />
+            <element signature="e#14753#14754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Sum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="e#50#51#0" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elaborator/ElaboratorVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#4111#4119#0" expanded="true" />
+            <element signature="e#10889#10890#0" expanded="true" />
+            <element signature="e#10911#10912#0" expanded="true" />
           </folding>
         </state>
       </provider>

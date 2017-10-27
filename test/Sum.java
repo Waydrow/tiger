@@ -27,6 +27,7 @@ class Doit { // xx
         b[1] = 3;
         i = b[1];
         sum = b.length;
+        a = false;
         if (!a && p) {
             System.out.println(222);
         } else {
@@ -34,7 +35,7 @@ class Doit { // xx
         }
         while (i<n){
         	sum = sum + i;
-        	i = i+1;
+        	i = i + 1;
         }
         return sum;
     }
@@ -53,12 +54,13 @@ class Doit { // xx
 }
 
 class Test extends Doit {
-    int b;
+    Doit b;
     int ii;
     public int tt(boolean aa, int uu) {
         int qqq;
         qqq = 2;
         System.out.println(333);
-        return 0;
+        //qqq = b.test();
+        return 1;
     }
 }

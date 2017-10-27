@@ -14,6 +14,8 @@ public class Ast {
             // class: 2
             // Such that one can easily tell who is who
             public abstract int getNum();
+
+            public int lineNum;
         }
 
         // boolean
@@ -43,6 +45,11 @@ public class Ast {
 
             public ClassType(String id) {
                 this.id = id;
+            }
+
+            public ClassType(String id, int line) {
+                this.id = id;
+                this.lineNum = line;
             }
 
             @Override
@@ -109,6 +116,7 @@ public class Ast {
     // dec
     public static class Dec {
         public static abstract class T implements ast.Acceptable {
+            public int lineNum;
         }
 
         public static class DecSingle extends T {
@@ -131,6 +139,7 @@ public class Ast {
     // expression
     public static class Exp {
         public static abstract class T implements ast.Acceptable {
+            public int lineNum;
         }
 
         // +
@@ -141,6 +150,12 @@ public class Ast {
             public Add(T left, T right) {
                 this.left = left;
                 this.right = right;
+            }
+
+            public Add(T left, T right, int line) {
+                this.left = left;
+                this.right = right;
+                this.lineNum = line;
             }
 
             @Override
@@ -160,6 +175,12 @@ public class Ast {
                 this.right = right;
             }
 
+            public And(T left, T right, int line) {
+                this.left = left;
+                this.right = right;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -177,6 +198,12 @@ public class Ast {
                 this.index = index;
             }
 
+            public ArraySelect(T array, T index, int line) {
+                this.array = array;
+                this.index = index;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -191,13 +218,21 @@ public class Ast {
             public java.util.LinkedList<T> args;
             public String type; // type of first field "exp"
             public java.util.LinkedList<Type.T> at; // arg's type
-            public Type.T rt;
+            public Type.T rt; // return type
 
             public Call(T exp, String id, java.util.LinkedList<T> args) {
                 this.exp = exp;
                 this.id = id;
                 this.args = args;
                 this.type = null;
+            }
+
+            public Call(T exp, String id, java.util.LinkedList<T> args, int line) {
+                this.exp = exp;
+                this.id = id;
+                this.args = args;
+                this.type = null;
+                this.lineNum = line;
             }
 
             @Override
@@ -210,6 +245,10 @@ public class Ast {
         // False
         public static class False extends T {
             public False() {
+            }
+
+            public False(int line) {
+                this.lineNum = line;
             }
 
             @Override
@@ -229,6 +268,13 @@ public class Ast {
                 this.id = id;
                 this.type = null;
                 this.isField = false;
+            }
+
+            public Id(String id, int line) {
+                this.id = id;
+                this.type = null;
+                this.isField = false;
+                this.lineNum = line;
             }
 
             public Id(String id, Type.T type, boolean isField) {
@@ -252,6 +298,11 @@ public class Ast {
                 this.array = array;
             }
 
+            public Length(T array, int line) {
+                this.array = array;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -269,6 +320,12 @@ public class Ast {
                 this.right = right;
             }
 
+            public Lt(T left, T right, int line) {
+                this.left = left;
+                this.right = right;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -282,6 +339,11 @@ public class Ast {
 
             public NewIntArray(T exp) {
                 this.exp = exp;
+            }
+
+            public NewIntArray(T exp, int line) {
+                this.exp = exp;
+                this.lineNum = line;
             }
 
             @Override
@@ -299,6 +361,11 @@ public class Ast {
                 this.id = id;
             }
 
+            public NewObject(String id, int line) {
+                this.id = id;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -314,6 +381,11 @@ public class Ast {
                 this.exp = exp;
             }
 
+            public Not(T exp, int line) {
+                this.exp = exp;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -327,6 +399,11 @@ public class Ast {
 
             public Num(int num) {
                 this.num = num;
+            }
+
+            public Num(int num, int line) {
+                this.num = num;
+                this.lineNum = line;
             }
 
             @Override
@@ -346,6 +423,12 @@ public class Ast {
                 this.right = right;
             }
 
+            public Sub(T left, T right, int line) {
+                this.left = left;
+                this.right = right;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -356,6 +439,10 @@ public class Ast {
         // this
         public static class This extends T {
             public This() {
+            }
+
+            public This(int line) {
+                this.lineNum = line;
             }
 
             @Override
@@ -375,6 +462,12 @@ public class Ast {
                 this.right = right;
             }
 
+            public Times(T left, T right, int line) {
+                this.left = left;
+                this.right = right;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -385,6 +478,10 @@ public class Ast {
         // True
         public static class True extends T {
             public True() {
+            }
+
+            public True(int line) {
+                this.lineNum = line;
             }
 
             @Override
@@ -400,6 +497,7 @@ public class Ast {
     // statement
     public static class Stm {
         public static abstract class T implements ast.Acceptable {
+            public int lineNum;
         }
 
         // assign
@@ -412,6 +510,13 @@ public class Ast {
                 this.id = id;
                 this.exp = exp;
                 this.type = null;
+            }
+
+            public Assign(String id, Exp.T exp, int line) {
+                this.id = id;
+                this.exp = exp;
+                this.type = null;
+                this.lineNum = line;
             }
 
             @Override
@@ -430,6 +535,13 @@ public class Ast {
                 this.id = id;
                 this.index = index;
                 this.exp = exp;
+            }
+
+            public AssignArray(String id, Exp.T index, Exp.T exp, int line) {
+                this.id = id;
+                this.index = index;
+                this.exp = exp;
+                this.lineNum = line;
             }
 
             @Override
@@ -464,6 +576,13 @@ public class Ast {
                 this.elsee = elsee;
             }
 
+            public If(Exp.T condition, T thenn, T elsee, int line) {
+                this.condition = condition;
+                this.thenn = thenn;
+                this.elsee = elsee;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -476,6 +595,11 @@ public class Ast {
 
             public Print(Exp.T exp) {
                 this.exp = exp;
+            }
+
+            public Print(Exp.T exp, int line) {
+                this.exp = exp;
+                this.lineNum = line;
             }
 
             @Override
@@ -494,6 +618,12 @@ public class Ast {
                 this.body = body;
             }
 
+            public While(Exp.T condition, T body, int line) {
+                this.condition = condition;
+                this.body = body;
+                this.lineNum = line;
+            }
+
             @Override
             public void accept(ast.Visitor v) {
                 v.visit(this);
@@ -506,6 +636,7 @@ public class Ast {
     // method
     public static class Method {
         public static abstract class T implements ast.Acceptable {
+            public int lineNum;
         }
 
         public static class MethodSingle extends T {
@@ -525,6 +656,18 @@ public class Ast {
                 this.locals = locals;
                 this.stms = stms;
                 this.retExp = retExp;
+            }
+
+            public MethodSingle(Type.T retType, String id,
+                                LinkedList<Dec.T> formals, LinkedList<Dec.T> locals,
+                                LinkedList<Stm.T> stms, Exp.T retExp, int line) {
+                this.retType = retType;
+                this.id = id;
+                this.formals = formals;
+                this.locals = locals;
+                this.stms = stms;
+                this.retExp = retExp;
+                this.lineNum = line;
             }
 
             @Override
