@@ -63,4 +63,8 @@ class Test extends Doit {
         //qqq = b.test();
         return 1;
     }
+    public int test() {
+        ii = 1;
+        return ii;
+    }
 }

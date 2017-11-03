@@ -10,15 +10,14 @@ struct Doit
 {
   struct Doit_vtable *vptr;
   int ii;
-  int bb;
+  struct Doit * bb;
 };
 struct Test
 {
   struct Test_vtable *vptr;
   int ii;
-  int bb;
-  int b;
-  int ii;
+  struct Doit * bb;
+  struct Doit * b;
 };
 // vtables structures
 struct Sum_vtable
@@ -48,16 +47,27 @@ int Doit_doit(struct Doit * this, int n)
   int i;
   int a;
   int p;
-  int b;
+  int* b;
 
-  i = 0;  sum = 0;  a = 0;  p = 0;  b = 0;  b = 0;  i = 0;  sum = 0;  a = 0;  if (0)
-    a = 0;
+  i = 0;
+  sum = 0;
+  a = 0;
+  p = 1;
+  b = ((int*)(Tiger_new_array(2)));
+  b[1] = 3;
+  i = b[1];
+  sum = sizeof(b);
+  a = 0;
+  if (!a && p)
+    System_out_println (222);
+
   else
-    a = 0;
-  if (0)
-    a = 0;
-  else
-    a = 0;
+    a = 1;
+
+  while (i < n) {
+    sum = sum + i;
+    i = i + 1;
+  }
   return sum;
 }
 int Doit_test(struct Doit * this, int bbb)
@@ -76,8 +86,15 @@ int Test_tt(struct Test * this, int aa, int uu)
 {
   int qqq;
 
-  qqq = 2;  System_out_println (333);
+  qqq = 2;
+  System_out_println (333);
   return 1;
+}
+int Test_test(struct Test * this)
+{
+
+  this->ii = 1;
+  return this->ii;
 }
 
 // vtables
@@ -95,7 +112,7 @@ struct Doit_vtable Doit_vtable_ =
 struct Test_vtable Test_vtable_ = 
 {
   Doit_doit,
-  Doit_test,
+  Test_test,
   Doit_isFalse,
   Test_tt,
 };

@@ -40,8 +40,11 @@ public class PrettyPrintVisitor implements Visitor {
     private int indentLevel;
     private java.io.BufferedWriter writer;
 
+    private MethodSingle currentMethod;
+
     public PrettyPrintVisitor() {
         this.indentLevel = 2;
+        currentMethod = null;
     }
 
     private void indent() {
@@ -125,6 +128,9 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(Id e) {
+        if (this.isClassField(e.id)) {
+            this.say("this->");
+        }
         this.say(e.id);
     }
 
@@ -196,15 +202,21 @@ public class PrettyPrintVisitor implements Visitor {
     @Override
     public void visit(Assign s) {
         this.printSpaces();
+        if (this.isClassField(s.id)) {
+            this.say("this->");
+        }
         this.say(s.id + " = ");
         s.exp.accept(this);
-        this.say(";");
+        this.sayln(";");
         return;
     }
 
     @Override
     public void visit(AssignArray s) {
         this.printSpaces();
+        if (this.isClassField(s.id)) {
+            this.say("this->");
+        }
         this.say(s.id + "[");
         s.index.accept(this);
         this.say("] = ");
@@ -226,17 +238,19 @@ public class PrettyPrintVisitor implements Visitor {
         this.printSpaces();
         this.say("if (");
         s.condition.accept(this);
-        this.sayln(")");
+        this.sayln(") {");
         this.indent();
         s.thenn.accept(this);
         this.unIndent();
-        this.sayln("");
+        //this.sayln("");
         this.printSpaces();
-        this.sayln("else");
+        this.sayln("} else {");
         this.indent();
         s.elsee.accept(this);
-        this.sayln("");
+        //this.sayln("");
         this.unIndent();
+        this.printSpaces();
+        this.sayln("}");
         return;
     }
 
@@ -290,6 +304,7 @@ public class PrettyPrintVisitor implements Visitor {
     // method
     @Override
     public void visit(MethodSingle m) {
+        this.currentMethod = m;
         m.retType.accept(this);
         this.say(" " + m.classId + "_" + m.id + "(");
         int size = m.formals.size();
@@ -322,6 +337,7 @@ public class PrettyPrintVisitor implements Visitor {
 
     @Override
     public void visit(MainMethodSingle m) {
+        this.currentMethod = null;
         this.sayln("int Tiger_main ()");
         this.sayln("{");
         for (Dec.T dec : m.locals) {
@@ -352,6 +368,7 @@ public class PrettyPrintVisitor implements Visitor {
 
     private void outputVtable(VtableSingle v) {
         this.sayln("struct " + v.id + "_vtable " + v.id + "_vtable_ = ");
+        //this.sayln(v.id + "_vtable_ = ");
         this.sayln("{");
         for (codegen.C.Ftuple t : v.ms) {
             this.say("  ");
@@ -411,6 +428,12 @@ public class PrettyPrintVisitor implements Visitor {
         }
         this.sayln("");
 
+//        // declare
+//        for (Vtable.T v : p.vtables) {
+//            VtableSingle vs = (VtableSingle) v;
+//            this.sayln("struct " + vs.id + "_vtable " + vs.id + "_vtable_;");
+//        }
+
         this.sayln("// methods");
         for (Method.T m : p.methods) {
             m.accept(this);
@@ -436,6 +459,23 @@ public class PrettyPrintVisitor implements Visitor {
             System.exit(1);
         }
 
+    }
+
+    private boolean isClassField(String id) {
+        if (currentMethod == null) {
+            return false;
+        }
+        for (Dec.T dec : this.currentMethod.formals) {
+            if (((DecSingle)dec).id.equals(id)) {
+                return false;
+            }
+        }
+        for (Dec.T dec : this.currentMethod.locals) {
+            if (((DecSingle)dec).id.equals(id)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
