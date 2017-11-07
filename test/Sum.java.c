@@ -9,15 +9,7 @@ struct Sum
 struct Doit
 {
   struct Doit_vtable *vptr;
-  int ii;
-  struct Doit * bb;
-};
-struct Test
-{
-  struct Test_vtable *vptr;
-  int ii;
-  struct Doit * bb;
-  struct Doit * b;
+  int b;
 };
 // vtables structures
 struct Sum_vtable
@@ -27,74 +19,18 @@ struct Sum_vtable
 struct Doit_vtable
 {
   int (*doit)();
-  int (*test)();
-  int (*isFalse)();
-};
-
-struct Test_vtable
-{
-  int (*doit)();
-  int (*test)();
-  int (*isFalse)();
-  int (*tt)();
 };
 
 
 // methods
 int Doit_doit(struct Doit * this, int n)
 {
-  int sum;
-  int i;
-  int a;
-  int p;
-  int* b;
+  int* a;
 
-  i = 0;
-  sum = 0;
-  a = 0;
-  p = 1;
-  b = ((int*)(Tiger_new_array(2)));
-  b[1] = 3;
-  i = b[1];
-  sum = sizeof(b);
-  a = 0;
-  if (!a && p)
-    System_out_println (222);
-
-  else
-    a = 1;
-
-  while (i < n) {
-    sum = sum + i;
-    i = i + 1;
-  }
-  return sum;
-}
-int Doit_test(struct Doit * this, int bbb)
-{
-  int rr;
-
-  System_out_println (0);
-  return 0;
-}
-int Doit_isFalse(struct Doit * this)
-{
-
-  return 0;
-}
-int Test_tt(struct Test * this, int aa, int uu)
-{
-  int qqq;
-
-  qqq = 2;
-  System_out_println (333);
-  return 1;
-}
-int Test_test(struct Test * this)
-{
-
-  this->ii = 1;
-  return this->ii;
+  this->b = 4;
+  a = ((int*)(Tiger_new_array(2)));
+  a[0] = 2 * this->b;
+  return a[0];
 }
 
 // vtables
@@ -105,16 +41,6 @@ struct Sum_vtable Sum_vtable_ =
 struct Doit_vtable Doit_vtable_ = 
 {
   Doit_doit,
-  Doit_test,
-  Doit_isFalse,
-};
-
-struct Test_vtable Test_vtable_ = 
-{
-  Doit_doit,
-  Test_test,
-  Doit_isFalse,
-  Test_tt,
 };
 
 
